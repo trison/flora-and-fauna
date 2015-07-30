@@ -26,7 +26,25 @@
 	text-align: center;
 	vertical-align: middle;
 	height: 840px;
-	font-size: 800%;
+	font-size: 90px;
 	opacity: 1;
 	padding:5%;
+	padding-bottom: 20%;
+	position:relative;
+}
+
+#flora_and_fauna{
+	top:30%;
+	position:absolute;
+/*	left:26%;
+	
+	padding:auto;*/
+}
+
+#collective{
+	top:40%;
+	position:absolute;
+/*	left:35%;
+	
+	padding:auto;*/
 }
