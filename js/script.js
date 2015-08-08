@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('#name').hide().delay(150).fadeToggle(800);
 
     var scroll_pos = 0;
-    var menu_changed = false;
+    var title_changed, menu_changed = false;
     var $header = $('.header');
     var $ul_li_a = $('.ul li a');
 
@@ -26,20 +26,23 @@ $(document).ready(function(){
     $('body').on('mousewheel', function(){
     	scroll_pos = $(this).scrollTop();
     	console.log(scroll_pos);
-    	if(scroll_pos >= 200 && !menu_changed){
-    		$header.css({'background-color': 'gray'});
-    		//$header.css("opacity", "0.8");
-    		$ul_li_a.css({'color': 'black'});
+    	if(scroll_pos >= 200 && !title_changed){
+    		
     		$('#name').fadeToggle(350);
+    		title_changed=true;
+    	}
+    	else if(scroll_pos >= 625 && !menu_changed){
+			$header.css({'background-color': 'gray'});
+    		$ul_li_a.css({'color': 'black'});
     		menu_changed=true;
     	}
-    	else if(menu_changed && scroll_pos < 200){
-    		console.log("here");
-    		$('#name').delay(150).fadeIn(800);
+    	else if(menu_changed && scroll_pos < 625){
     		$header.css({'background-color': ''});
-    	//	$header.css("opacity", "1");
-    		
     		menu_changed=false;
+    	}
+    	else if(title_changed && scroll_pos < 200){
+    		$('#name').delay(150).fadeIn(800);
+    		title_changed=false;
     	}
     });
 });
