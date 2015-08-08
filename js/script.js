@@ -14,8 +14,17 @@ $(document).ready(function(){
     	$('#demo').slideUp();
     });
 
-    $('#flora_and_fauna').hide().delay(100).fadeIn(800);
-    $('#collective').hide().delay(700).fadeIn(850);
 
+    $('#name').hide().delay(150).fadeIn(800);
+
+     $('body').bind('mousewheel', function(e){
+     if(e.originalEvent.wheelDelta < 0) {
+         //scroll down
+         console.log('Down');
+     }else {
+         //scroll up
+         console.log('Up');
+     }
+ });
 
 });

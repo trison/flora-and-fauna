@@ -28,23 +28,52 @@
 	height: 840px;
 	font-size: 90px;
 	opacity: 1;
-	padding:5%;
-	padding-bottom: 20%;
+	padding:5% 0 20% 0;
 	position:relative;
 }
 
-#flora_and_fauna{
-	top:30%;
-	position:absolute;
-/*	left:26%;
-	
-	padding:auto;*/
+#name{
+	position:relative;
+	margin:auto;	
+	top:10%;
 }
 
-#collective{
-	top:40%;
-	position:absolute;
-/*	left:35%;
-	
-	padding:auto;*/
+#header{
+	height:100px;
+	width: 100%;
+	background-color: none;
+	opacity: 1;
+	position:fixed;
+	top:0;
+	padding: 0 5% 0 5%;
 }
+
+ul.menu{
+	float:right;
+	list-style: none;
+	margin:0;
+}
+
+ul.menu li{
+	color:white;
+	float:left;
+	position:relative;
+	font-size: 20px;
+	margin: 20px 40px 0 5px;
+}
+
+ul.menu li a{
+	transition: color 0.5s linear;
+	color:white;
+}
+
+ul.menu li:hover a{
+	color:orange;
+	text-decoration: none;
+}
+
+
+
+
+
+
