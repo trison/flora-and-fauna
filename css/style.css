@@ -1,6 +1,7 @@
 .body{
 	margin: 0;
 	padding: 0;
+	background-color: #EEEEEE;
 }
 
 .hero{
@@ -35,26 +36,29 @@
 #name{
 	position:relative;
 	margin:auto;	
-	top:10%;
+	top:15%;
 }
 
-#header{
-	height:100px;
+.header{
+	transition: background-color 0.5s linear;
+	height:75px;
 	width: 100%;
 	background-color: none;
-	opacity: 1;
+	opacity: .8;
 	position:fixed;
 	top:0;
 	padding: 0 5% 0 5%;
 }
 
 ul.menu{
+	position:relative;
 	float:right;
 	list-style: none;
-	margin:0;
 }
 
 ul.menu li{
+	transition: color 0.5s linear;
+	opacity: 1;
 	color:white;
 	float:left;
 	position:relative;
@@ -72,7 +76,39 @@ ul.menu li:hover a{
 	text-decoration: none;
 }
 
-
+.block1{
+	width: 100%;
+	background-color: #EEEEEE;
+	color:gray;
+	padding:5% 8% 5% 10%;
+	margin:auto;
+	border-style: none none solid none;
+	border-color: gray;
+	border-width: 1px;
+	text-align: center;
+}
+.block2{
+	width: 100%;
+	background-color: #EEEEEE;
+	color:gray;
+	padding:5% 8% 5% 10%;
+	margin:auto;
+	border-style: none none solid none;
+	border-color: gray;
+	border-width: 1px;
+	text-align: center;
+}
+.block3{
+	width: 100%;
+	background-color: #EEEEEE;
+	color:gray;
+	padding:5% 8% 5% 10%;
+	margin:auto;
+	border-style: none none solid none;
+	border-color: gray;
+	border-width: 1px;
+	text-align: center;
+}
 
 
 
