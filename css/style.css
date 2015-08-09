@@ -50,7 +50,7 @@
       rgba(0, 0, 0, 0.4)
     );
     padding:2%;
-    border-radius: 3%;
+    border-radius: 15px;
 }
 .logo{
 	float:left;
@@ -61,6 +61,7 @@
 }
 .logo a{
 	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
 	color:white;
 	text-decoration: none;
 }
@@ -70,6 +71,7 @@
 }
 .header{
 	transition: background-color 0.5s linear, color 0.5s linear;
+	-webkit-transition: background-color 0.5s linear, color 0.5s linear;
 	height:75px;
 	width: 100%;
 	background-color: none;
@@ -89,6 +91,7 @@ ul.menu{
 
 ul.menu li{
 	transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
 	opacity: 1;
 	color:initial;
 	float:left;
@@ -99,6 +102,7 @@ ul.menu li{
 
 ul.menu li a{
 	transition: color 0.5s linear;
+	-webkit-transition: color 0.5s linear;
 	color:white;
 }
 
@@ -108,7 +112,6 @@ ul.menu li:hover a{
 }
 
 .block1{
-	background-color: #EEEEEE;
 	color:black;
 	padding:6% 5% 8% 5%;
 	text-align: center;
@@ -130,37 +133,52 @@ ul.menu li:hover a{
 	color:white;
 }
 .block2{
-	padding: 8% 5% 8% 5%;
-	text-align: left;
+	padding: 5% 10% 2% 10%;
+	text-align: center;
 	font-size: 30px;
 	font-family: quicksand;
 }
 .block2 a{
-	transition: color 0.5s linear;
-	color:orange;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	color:gold;
 }
 .block2 a:hover{
-	color:gold;
+	color:orange;
 	text-decoration: none;
+}
+.side-border{
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.social{
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	color:white;
 }
 .pic1{
 	transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
 	opacity:0.1;
 }
 .pic2{
 	transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
 	opacity:0.1;
 }
 .pic3{
 	transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
 	opacity:0.1;
 }
 .block3{
-	background-color: #EEEEEE;
 	color:gray;
 	padding:5% 8% 5% 10%;
 	margin:auto;
 	text-align: center;
+	font-family: quicksand;
 }
 
 
